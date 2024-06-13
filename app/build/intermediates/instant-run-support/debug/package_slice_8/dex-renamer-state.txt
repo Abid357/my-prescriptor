@@ -1,0 +1,4 @@
+#Wed Jan 10 16:59:02 GST 2018
+base.0=C\:\\Users\\Abid357\\AndroidStudioProjects\\myprescriptor\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex

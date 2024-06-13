@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kaaddevelopers.myprescriptor.auth.signup.view.SignupActivity">
+
+    <EditText
+        android:id="@+id/signupActivityEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress" />
+
+    <EditText
+        android:id="@+id/signupActivityPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+    android:id="@+id/signupActivitySignupButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sign up" />
+
+    <Button
+        android:id="@+id/googleLoginActivityLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Login" />
+
+</LinearLayout>

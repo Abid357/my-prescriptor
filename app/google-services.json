@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "758334594223",
+    "firebase_url": "https://my-prescriptor-76cab.firebaseio.com",
+    "project_id": "my-prescriptor-76cab",
+    "storage_bucket": "my-prescriptor-76cab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758334594223:android:8651cf5a40a2817c",
+        "android_client_info": {
+          "package_name": "com.kaaddevelopers.myprescriptor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758334594223-kesnntqnpfglfo5oj3gdt8nmkh4lb56h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCN-JMLJL3eY-3mdV5we6i8o97-X_uZ44"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

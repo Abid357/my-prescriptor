@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kaaddevelopers.myprescriptor.SignupActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="188dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:text="Create Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_confirmpassword" />
+
+    <ImageView
+        android:id="@+id/image_usericon"
+        android:layout_width="146dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_createaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/text_createaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="18dp"
+        android:text="Create Account"
+        android:textColor="#0285ff"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/create_lname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_usericon" />
+
+    <LinearLayout
+        android:id="@+id/layout_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/layout_password"
+        app:layout_constraintEnd_toEndOf="@+id/create_country"
+        app:layout_constraintStart_toStartOf="@+id/layout_password"
+        app:layout_constraintTop_toBottomOf="@+id/create_country">
+
+        <ImageView
+            android:id="@+id/image_email"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/email_icon" />
+
+        <EditText
+            android:id="@+id/create_email"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+
+
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_confirmpassword"
+        app:layout_constraintEnd_toEndOf="@+id/create_country"
+        app:layout_constraintStart_toStartOf="@+id/layout_confirmpassword"
+        app:layout_constraintTop_toBottomOf="@+id/layout_email">
+
+        <ImageView
+            android:id="@+id/image_password"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+
+            android:layout_marginTop="13dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/password_icon" />
+
+        <EditText
+            android:id="@+id/create_password"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_confirmpassword"
+        android:layout_width="304dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button_create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_password">
+
+        <ImageView
+            android:id="@+id/image_password2"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/password_icon" />
+
+        <EditText
+            android:id="@+id/create_confirmpassword"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="155dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/create_fname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/create_lname"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/create_lname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textLongMessage|textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/create_fname"
+        app:layout_constraintTop_toBottomOf="@+id/text_createaccount" />
+
+    <EditText
+        android:id="@+id/create_country"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textLongMessage"
+        app:layout_constraintBottom_toTopOf="@+id/layout_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/create_dob"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Date of Birth"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/create_country"
+        app:layout_constraintEnd_toEndOf="@+id/create_country"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_lname">
+
+        <ImageView
+            android:id="@+id/image_location"
+            android:layout_width="37dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/location_icon" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

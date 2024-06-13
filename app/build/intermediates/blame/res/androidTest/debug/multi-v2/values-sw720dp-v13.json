@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Abid357\\AndroidStudioProjects\\myprescriptor\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Abid357\\.gradle\\caches\\transforms-1\\files-1.1\\core-0.9.6.0.aar\\bea0440f17d9399edeff99d443e175be\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "172",
+                        "endColumns": "51",
+                        "endOffsets": "219"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Abid357\\.gradle\\caches\\transforms-1\\files-1.1\\appintro-v4.2.2.aar\\6d785e61743438da2dcbfcb352e03538\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,58",
+                        "endOffsets": "108,167"
+                    }
+                }
+            ]
+        }
+    ]
+}

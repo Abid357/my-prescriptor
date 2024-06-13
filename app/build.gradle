@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+
+def googleDaggerVersion = '2.14.1'
+def butterknifeVersion = '8.8.1'
+def rxFirebaseVersion = '1.4-beta.1'
+def firebaseVersion = '11.8.0'
+def rxBindingVersion = '2.0.0'
+def affolestadMaterialDialogVersion = '0.9.6.0'
+def countryPickerVersion = '1.2.0'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.kaaddevelopers.myprescriptor"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //AppIntro
+    compile 'com.github.msayan:tutorial-view:v1.0.3'
+    compile 'com.github.apl-devs:appintro:v4.2.2'
+
+    //Google Dagger 2
+    compile "com.google.dagger:dagger:${googleDaggerVersion}"
+    compile "com.google.dagger:dagger-android:${googleDaggerVersion}"
+    compile "com.google.dagger:dagger-android-support:${googleDaggerVersion}"
+    // if you use the support libraries
+    annotationProcessor "com.google.dagger:dagger-compiler:${googleDaggerVersion}"
+    annotationProcessor "com.google.dagger:dagger-android-processor:${googleDaggerVersion}"
+
+    //ButterKnife
+    compile "com.jakewharton:butterknife:${butterknifeVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
+
+    //Firebase
+    compile "com.google.firebase:firebase-core:${firebaseVersion}"
+    compile "com.google.firebase:firebase-auth:${firebaseVersion}"
+    compile "com.google.firebase:firebase-firestore:${firebaseVersion}"
+    compile "com.google.android.gms:play-services-auth:${firebaseVersion}"
+
+    //Rx2 Firebase
+    compile "com.github.frangsierra:rx2firebase:${rxFirebaseVersion}"
+
+    //RecyclerView
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+
+    //Country Picker
+    compile "com.github.mukeshsolanki:country-picker-android:${countryPickerVersion}"
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+
+    /**
+     * RxBinding Related Dependencies
+     */
+
+    //RxBinding Platform Bindings
+    compile "com.jakewharton.rxbinding2:rxbinding:$rxBindingVersion"
+
+    //RxBinding support-v4' library bindings
+    compile "com.jakewharton.rxbinding2:rxbinding-support-v4:$rxBindingVersion"
+
+    //RxBinding 'appcompat-v7' library bindings
+    compile "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:$rxBindingVersion"
+
+    //RxBinding 'design' library bindings
+    compile "com.jakewharton.rxbinding2:rxbinding-design:$rxBindingVersion"
+
+    //RxBinding 'recyclerview-v7' library bindings
+    //compile "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:$rxBindingVersion"
+
+    //RxBinding 'leanback-v17' library bindings
+    //compile "com.jakewharton.rxbinding2:rxbinding-leanback-v17:$rxBindingVersion"
+
+    /**
+     * Custom Material Design Box Related Dependencies
+     */
+    // Custom Material Dialogs
+    compile "com.afollestad.material-dialogs:core:$affolestadMaterialDialogVersion"
+    compile "com.afollestad.material-dialogs:commons:$affolestadMaterialDialogVersion"
+
+    //DevLight
+    compile 'devlight.io:navigationtabbar:1.2.5'
+
+    //Unit Test
+    // Required -- JUnit 4 framework
+    testCompile 'junit:junit:4.12'
+    // Optional -- Mockito framework
+    testCompile 'org.mockito:mockito-core:1.10.19'
+}
+apply plugin: 'com.google.gms.google-services'
